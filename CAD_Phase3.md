@@ -2,7 +2,7 @@
 
 DEVELOPMENT PART
 
-`In the development phase of "Personal Blog", design a user-friendly HTML/CSS . Extensive testing, potential user authentication with help of  static site generator  Hugo to make it easy to update and manage the blog content. This would involve converting your HTML content into template files that can be easily updated and deployment on IBM Cloud prepare the blog for production use.
+In the development phase of "Personal Blog", design a user-friendly HTML/CSS . Extensive testing, potential user authentication with help of  static site generator  Hugo to make it easy to update and manage the blog content. This would involve converting your HTML content into template files that can be easily updated and deployment on IBM Cloud prepare the blog for production use.
 
 CONTENT PLANNING :
 
@@ -103,47 +103,48 @@ disqusShortname = 'YOUR\_DISQUS\_SHORTNAME'   # use disqus comments
 
   twitter = 'YOUR\_TWITTER\_ID'               # twitter.com/YOUR\_TWITTER\_ID
 
-`  `github = 'vasanthv7'                      # github.com/vasanthv7
+  github = 'vasanthv7'                      # github.com/vasanthv7
 
-`  `instagram = 'YOUR\_INSTAGRAM\_ID'           # instagram.com/YOUR\_INSTAGRAM\_ID
+instagram = 'YOUR\_INSTAGRAM\_ID'           # instagram.com/YOUR\_INSTAGRAM\_ID
 
-`  `linkedin = 'Vasanth B'             # linkedin.com/in/Vasanth B
+linkedin = 'Vasanth B'             # linkedin.com/in/Vasanth B
 
 
 
-`  `# home page profile
+# home page profile
 
-`  `avatar = 'GRAVATAR\_EMAIL'                 # gravatar email or image url
+ avatar = 'GRAVATAR\_EMAIL'                 # gravatar email or image url
 
-`  `name = 'blogger'
+ name = 'blogger'
 
-`  `bio = 'Always say yes to new adventures'
+ bio = 'Always say yes to new adventures'
 
-`  `[menu]
+ [menu]
 
-`  `[[menu.main]]
+[[menu.main]]
 
-`    `identifier = "about"
+ identifier = "about"
 
-`    `name = "About"
+name = "About"
 
-`    `url = "/about/"
+url = "/about/"
 
-`    `weight = 10
+weight = 10
 
-`  `[[menu.main]]
+ [[menu.main]]
 
-`    `identifier = "contact"
+ identifier = "contact"
 
-`    `name = "Contact"
+ name = "Contact"
 
-`    `url = "/contact/"
+ url = "/contact/"
 
-`    `weight = 10
+ weight = 10
 
 **layouts>>\_default>>baseof.html**
 
-`  `![](Aspose.Words.fd254e84-9413-40ee-8a81-5e235395eb6c.003.png)
+![theme](https://github.com/Vasanthv7/Personal-Blog/assets/126228661/b2bfb331-1f79-4a2a-940d-0c07da3ff4e3)
+
 
 
 <!doctype html>
@@ -208,37 +209,37 @@ disqusShortname = 'YOUR\_DISQUS\_SHORTNAME'   # use disqus comments
 
 <html
 
-`  `class="not-ready lg:text-base"
+ class="not-ready lg:text-base"
 
-`  `style="--bg: {{ $bg\_color }}"
+ style="--bg: {{ $bg\_color }}"
 
-`  `lang="{{ or site.LanguageCode site.Language.Lang }}"
+`lang="{{ or site.LanguageCode site.Language.Lang }}"
 
 \>
 
-`  `{{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-`  `<body class="text-black duration-200 ease-out dark:text-white">
+<body class="text-black duration-200 ease-out dark:text-white">
 
-`    `{{ partial "header.html" . }}
+ {{ partial "header.html" . }}
 
-`    `<main
+<main
 
-`      `class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
+class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
 
-`    `>
+>
 
-`      `{{ block "main" . }}
+ {{ block "main" . }}
 
 
 
-`      `{{ end }}
+ {{ end }}
 
-`    `</main>
+  </main>
 
-`    `{{ partial "footer.html" . }}
+  {{ partial "footer.html" . }}
 
-`  `</body>
+ </body>
 
 </html>
 
@@ -281,35 +282,35 @@ disqusShortname = 'YOUR\_DISQUS\_SHORTNAME'   # use disqus comments
 
 <div class="-mt-2 mb-16 flex items-center">
 
-`  `{{ if $avatar\_url }}
+  {{ if $avatar\_url }}
 
-`  `<div
+  <div
 
-`    `class="mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]"
+ class="mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]"
 
-`  `>
+>
 
-`    `<img
+ <img
 
-`      `class="my-0 aspect-square w-16 rounded-full !bg-black/5 hover:animate-spin dark:!bg-black/80"
+ class="my-0 aspect-square w-16 rounded-full !bg-black/5 hover:animate-spin dark:!bg-black/80"
 
-`      `src="{{ $avatar\_url }}"
+ src="{{ $avatar\_url }}"
 
-`      `alt="{{ site.Params.name | default site.Title }}"
+ alt="{{ site.Params.name | default site.Title }}"
 
-`    `/>
+ />
 
-`  `</div>
+ </div>
 
-`  `{{ end }}<!---->
+ {{ end }}<!---->
 
-`  `{{ if site.Params.name }}
+{{ if site.Params.name }}
 
-`  `<div>
+<div>
 
-`    `<h1 class="mb-2 mt-3 text-[1.6rem] font-bold">{{ site.Params.name }}</h1>
+ <h1 class="mb-2 mt-3 text-[1.6rem] font-bold">{{ site.Params.name }}</h1>
 
-`    `<div class="break-words">
+ <div class="break-words">
 
 `      `{{ site.Params.bio | default (print `A personal blog by `
 
@@ -606,7 +607,8 @@ disqusShortname = 'YOUR\_DISQUS\_SHORTNAME'   # use disqus comments
 
 **Partials**
 
-`	`**![](Aspose.Words.fd254e84-9413-40ee-8a81-5e235395eb6c.004.png)**
+![partials](https://github.com/Vasanthv7/Personal-Blog/assets/126228661/714443f2-cbcd-4308-ad51-a8839d871b7a)
+
 
 **Partials>>footer.html**
 
