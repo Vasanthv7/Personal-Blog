@@ -2,7 +2,7 @@
 
 DEVELOPMENT PART
 
-`	`In the development phase of "Personal Blog", design a user-friendly HTML/CSS . Extensive testing, potential user authentication with help of  static site generator  Hugo to make it easy to update and manage the blog content. This would involve converting your HTML content into template files that can be easily updated and deployment on IBM Cloud prepare the blog for production use.
+`In the development phase of "Personal Blog", design a user-friendly HTML/CSS . Extensive testing, potential user authentication with help of  static site generator  Hugo to make it easy to update and manage the blog content. This would involve converting your HTML content into template files that can be easily updated and deployment on IBM Cloud prepare the blog for production use.
 
 CONTENT PLANNING :
 
@@ -16,13 +16,13 @@ Code :
 
 **Download the pre-built Hugo executable for Windows**
 
-1. `    `Open [https://github.com/spf13/hugo/releases 727](https://github.com/spf13/hugo/releases) in your browser.
-1. The current version is hugo\_0.12\_windows\_amd64.zip.
-1. Download that ZIP file and save it in your D:\Hugo\bin folder.
-1. Find that ZIP file in Windows Explorer and extract all the files from it.
-1. You should see a .exe file with the same name as the ZIP file.
-1. Rename that .exe file to hugo.exe.
-1. Verify that the hugo.exe file is in the D:\Hugo\bin folder. (It’s possible that the extract put it in a sub-directory. If it did, use Windows Explorer to move it to D:\Hugo\bin.)
+1. Open [https://github.com/spf13/hugo/releases 727](https://github.com/spf13/hugo/releases) in your browser.
+2. The current version is hugo\_0.12\_windows\_amd64.zip.
+3. Download that ZIP file and save it in your D:\Hugo\bin folder.
+4. Find that ZIP file in Windows Explorer and extract all the files from it.
+5. You should see a .exe file with the same name as the ZIP file.
+6. Rename that .exe file to hugo.exe.
+7. Verify that the hugo.exe file is in the D:\Hugo\bin folder. (It’s possible that the extract put it in a sub-directory. If it did, use Windows Explorer to move it to D:\Hugo\bin.)
 
 
 **Generate your first site**
@@ -47,13 +47,16 @@ Note that you must type the full path to hugo unless you’ve updated your syste
 
 You now have Hugo installed and a site to work with. You need to add a layout (or theme), then create some content. Go to http://gohugo.io/overview/quickstart/ 302 for steps on doing that.
 
-![](Aspose.Words.fd254e84-9413-40ee-8a81-5e235395eb6c.001.png)
+
+![hugo_menu](https://github.com/Vasanthv7/Personal-Blog/assets/126228661/a285680b-257c-45c0-a550-61ec7e28c08a)
+
+
 
 Code:
 
-`	`Default.md
+Default.md
 
-`		`+++
++++
 
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 
@@ -65,15 +68,15 @@ draft = true
 
 Downlod themes :
 
-`	`By using git clone method to clone the git repo
+ By using git clone method to clone the git repo
 
-`		`git clone https//git.com/<repo\_name>/ themes/paper
+  git clone https//git.com/<repo\_name>/ themes/paper
 
 ![](Aspose.Words.fd254e84-9413-40ee-8a81-5e235395eb6c.002.png)
 
 Configure hugo.toml
 
-`	`baseURL = 'https://example.org/'
+baseURL = 'https://example.org/'
 
 languageCode = 'en-us'
 
@@ -90,15 +93,15 @@ disqusShortname = 'YOUR\_DISQUS\_SHORTNAME'   # use disqus comments
 
 [params]
 
-`  `# color style
+  # color style
 
-`  `color = 'linen'                           # linen, wheat, gray, light
+  color = 'linen'                           # linen, wheat, gray, light
 
-`  `cover = "img/blog1.png"
+  cover = "img/blog1.png"
 
-`  `# header social icons
+  # header social icons
 
-`  `twitter = 'YOUR\_TWITTER\_ID'               # twitter.com/YOUR\_TWITTER\_ID
+  twitter = 'YOUR\_TWITTER\_ID'               # twitter.com/YOUR\_TWITTER\_ID
 
 `  `github = 'vasanthv7'                      # github.com/vasanthv7
 
