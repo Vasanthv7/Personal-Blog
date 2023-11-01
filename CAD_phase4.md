@@ -50,9 +50,6 @@ if you want to host a website using IBM Cloud Object Storage, you can follow the
 ![Screenshot (64)](https://github.com/Vasanthv7/Personal-Blog/assets/126228661/6d6313b9-370f-42b7-9ff4-d0313358315d)
 
 
-![Screenshot (65)](https://github.com/Vasanthv7/Personal-Blog/assets/126228661/01d4343d-8b00-4214-b5e2-e92bd9ef0e1c)
-
-
 1. **Upload Your Website Content**: Upload your website's HTML, CSS, JavaScript, and other assets to your Object Storage bucket. You can do this using the IBM Cloud Object Storage web interface or by using the IBM Cloud CLI. For example, if you're using the IBM Cloud CLI, you can use the **ibmcloud cos** command to upload files.
 1. **Set Up a Custom Domain**: If you want to use a custom domain for your website, configure your domain's DNS settings to point to your Object Storage bucket. This typically involves creating a CNAME record or an alias record that points to the Object Storage bucket's endpoint URL.
 1. **Configure Object Storage Static Website Hosting**: IBM Cloud Object Storage offers static website hosting features. To enable website hosting, you'll need to configure your Object Storage bucket:
